@@ -1,5 +1,7 @@
 package main
 
-func main() {
+import "gvb-server/core"
 
+func main() {
+	core.InitConf()
 }

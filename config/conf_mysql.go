@@ -6,5 +6,5 @@ type Mysql struct {
 	db       string `yaml:"db"`
 	user     string `yaml:"user"`
 	password string `yaml:"password"`
-	logLevel string `yaml:"log_level"`
+	logLevel string `yaml:"log-level"`
 }
