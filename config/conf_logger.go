@@ -1,9 +1,9 @@
 package config
 
 type Logger struct {
-	level        string `yaml:"level"`
-	prefix       string `yaml:"prefix"`
-	director     string `yaml:"director"`
-	showLine     bool   `yaml:"show-line"`
-	logInConsole bool   `yaml:"log-in-console"`
+	Level        string `yaml:"level"`
+	Prefix       string `yaml:"prefix"`
+	Director     string `yaml:"director"`
+	ShowLine     bool   `yaml:"show_line"`
+	LogInConsole bool   `yaml:"log_in_console"`
 }

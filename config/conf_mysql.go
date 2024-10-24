@@ -1,10 +1,10 @@
 package config
 
 type Mysql struct {
-	host     string `yaml:"host"`
-	port     int    `yaml:"port"`
-	db       string `yaml:"db"`
-	user     string `yaml:"user"`
-	password string `yaml:"password"`
-	logLevel string `yaml:"log-level"`
+	Host     string `yaml:"host"`
+	Port     int    `yaml:"port"`
+	Db       string `yaml:"db"`
+	User     string `yaml:"user"`
+	Password string `yaml:"password"`
+	LogLevel string `yaml:"log_level"`
 }

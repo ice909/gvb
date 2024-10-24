@@ -10,10 +10,9 @@ import (
 
 // InitConf 读取yaml文件配置
 func InitConf() {
-	const ConfigFile = "./settings.yaml"
+	const ConfigFile = "settings.yaml"
 	c := &config.Config{}
 	yamlConf, err := os.ReadFile(ConfigFile)
-	fmt.Println(yamlConf)
 	if err != nil {
 		panic(err)
 	}
