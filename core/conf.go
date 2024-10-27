@@ -1,9 +1,8 @@
 package core
 
 import (
-	"fmt"
 	"gopkg.in/yaml.v3"
-	"gvb-server/config"
+	"gvb-server/global"
 	"log"
 	"os"
 )
@@ -11,7 +10,7 @@ import (
 // InitConf 读取yaml文件配置
 func InitConf() {
 	const ConfigFile = "settings.yaml"
-	c := &config.Config{}
+	c := &global.CONFIG
 	yamlConf, err := os.ReadFile(ConfigFile)
 	if err != nil {
 		panic(err)
@@ -21,5 +20,4 @@ func InitConf() {
 		log.Fatalf("config Init Unmarshal: %v", err)
 	}
 	log.Println("config Init success")
-	fmt.Println(c)
 }
